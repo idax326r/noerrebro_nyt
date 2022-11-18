@@ -1,0 +1,23 @@
+/*
+Theme Name: noerrebro 
+Template: oceanwp
+Version: 3.3.5
+Author: Ida S.
+*/
+
+h1 {
+  color: #275e2d;
+  font-family: neusa-next-std-condensed, sans-serif;
+  font-weight: 700;
+  font-style: italic;
+}
+h2 {
+  font-family: neusa-next-std-condensed, sans-serif;
+  font-weight: 700;
+  font-style: italic;
+}
+p {
+  font-family: neusa-next-std-condensed, sans-serif;
+  font-weight: 700;
+  font-style: italic;
+}
