@@ -10,87 +10,93 @@
 
 get_header(); ?>
 <style>
-h5{
-	padding-top:50px;
+
+h5 {
+padding-top:50px;
 font-size: 2rem;
 }
 
-button {
+.tilmeld {
 background-color: #275E2D;
 border: 2px solid #275E2D;
 color: white;
 padding:5px 15px 5px 15px;
-  text-transform: uppercase;
-  font-family: futura-pt-condensed, sans-serif;
-  font-weight: 700;
-  font-style: italic;
+text-transform: uppercase;
+font-family: futura-pt-condensed, sans-serif;
+font-weight: 700;
+font-style: italic;
+letter-spacing:1px;
 }
 
-article {
-/* padding-left: 100px;
-padding-right: 100px; */
+.tilmeld:hover{
+background-color: #EE8D33;
+border: 2px solid #EE8D33;
 }
+
+.luk:hover{
+color: #EE8D33;
+}
+
 img {
 max-width: 100%;
 /* aspect-ratio: 1/1; */
 object-fit: contain;
 margin-bottom:20px;
 }
-.luk {
-	/* background-color: #275E2D;
-	border: 2px solid #275E2D;
-	color: white;
-margin:15px;
-padding:5px 15px 5px 15px;
-margin-left: 100px; */
 
-	background-color: white;
-	border: 1px solid white;
-	color: #275E2D;
-padding-left:100px;
-}
-section.teams-container{
-	/* padding-top:-100px; */
+.luk {
+text-transform:uppercase;
+ font-family: futura-pt-condensed, sans-serif;
+  font-weight: 800;
+  font-style: italic;
+background-color: white;
+border: 1px solid white;
+color: #275E2D;
+margin-left:100px;
+font-size:16px;
 }
 
 .grid-container {
-	display: grid;
-	grid-template-columns: 1fr 1fr;
-	gap:15px;
-	padding-left: 100px;
+display: grid;
+grid-template-columns: 1fr 1fr;
+gap:15px;
+padding-left: 100px;
+padding-right:20px;
 }
 #overskrift {
-	background-color: #275E2D;
+background-color: #275E2D;
 }
 #overskrift h5 {
-	text-align: left;
-	padding-top: 37px;
+text-align: left;
+padding-top: 30px;
 text-align:center;
-	padding-bottom: 37px;
-	color:white;
-	  font-size: 35px;
+padding-bottom: 30px;
+color:white;
+font-size: 35px;
+}
+#site-header-inner {
+padding: 10px 0 0px 0;
 }
 
 @media (max-width: 750px) {
 .grid-container {
-	display: grid;
-	grid-template-columns: 1fr;
-	gap:15px;
-	padding: 25px;
+display: grid;
+grid-template-columns: 1fr;
+gap:15px;
+padding: 25px;
 }
 .luk {
-	margin-left: 5px;
-	padding-left:15px;
+margin-left: 5px;
+padding-left:15px;
 }
 }
-	</style>
+</style>
+
 <section id="primary" class="content-area">
 <main id="site-content">
-
 <section class="teams-container"></section>
 </main><!-- #site-content -->
-	<article>
-
+<article>
 <section id="overskrift">
 <h5></h5>
 </section>
@@ -98,15 +104,15 @@ text-align:center;
 	<div class="grid-container">
 	<div class="grid-item-1">
 	<img src="" alt=""></div>
-		<div class="grid-item-2">
+	<div class="grid-item-2">
 	<h3>Træningsinformation</h3>
 	<p></p>
 	<h3>Træningstider</h3>
-		<p></p>
 	<p></p>
 	<p></p>
 	<p></p>
-	<button>Tilmeld dig</button>
+	<p></p>
+	<a href="https://koservice.dbu.dk/ClubSignup?id=154&clubid=1987"><button class="tilmeld">Tilmeld</button></a>
 	</div>
 	</div>
 	</article>

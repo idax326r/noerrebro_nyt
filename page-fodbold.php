@@ -19,8 +19,8 @@ background-color: #275E2D;
 }
 #overskrift h2 {
 text-align: left;
-padding-top: 37px;
-padding-bottom: 37px;
+padding-top: 30px;
+padding-bottom: 30px;
 color:white;
 text-align: center;
 }
@@ -63,7 +63,7 @@ margin-right:15px;
 display: grid;
 grid-template-columns: repeat(2, 1fr);
 gap: 0.8em;
-padding: 20px 180px 100px 180px;
+padding: 35px 180px 100px 180px;
 cursor: pointer;
 margin-top:-195px;
 }
@@ -91,8 +91,6 @@ grid-area: 1/1;
 /* tekst placeret i venstre side */
 h5 {
 position: absolute;
-  /* bottom: 8px;
-  left: 16px; */
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -102,7 +100,6 @@ z-index: 200;
 }
 img {
 max-width: 100%;
- /* aspect-ratio: 1/1; */
 object-fit: contain;
 }
 .article-container {
@@ -206,8 +203,8 @@ function addEventListenersToButtons(){
 		elm.addEventListener("click", filtrering);
 	})
 }
-function filtrering(){
 
+function filtrering(){
 	filterTeams = this.dataset.team;
 	console.log("KNAP EVT",filterTeams)
 	visTeams();
@@ -227,6 +224,5 @@ function visTeams() {
 }
 
 </script>
-
 </section>
 <?php get_footer(); ?>
